@@ -4,6 +4,7 @@ import './markdown.css'
 import remarkGfm from 'remark-gfm'
 import ImageCarousel from '@/components/Custom/ImageCarousel'
 import PillButton from '@/components/Custom/PillButton'
+import path from 'path'
 
 interface Project {
   title: string
@@ -28,24 +29,13 @@ export default async function IndividualProjectPage({
   let markDownContent = ''
   let data: ProjectData = {}
 
-  if (environment === 'development') {
-    const file = await fs.readFile(
-      process.cwd() + '/public/Data/data.json',
-      'utf8'
-    )
-    data = JSON.parse(file)
+  const filePath = path.join(process.cwd(), 'public', 'Data', 'data.json')
+  const file = await fs.readFile(filePath, 'utf8')
+  data = JSON.parse(file)
 
-    markDownContent = await fs.readFile(
-      process.cwd() + data[project].md,
-      'utf8'
-    )
-  } else {
-    const file = await fs.readFile('/public/Data/data.json', 'utf8')
-    data = JSON.parse(file)
-
-    markDownContent = await fs.readFile(data[project].md, 'utf8')
-  }
-
+  const mdFilePath = path.join(process.cwd(), data[project].md)
+  markDownContent = await fs.readFile(mdFilePath, 'utf8')
+  
   // let images = data[project].imgs.map((img: string) => {
   //   return `/data/Images/${img}`
   // })

@@ -10,6 +10,7 @@ import Image from 'next/image'
 import PillButton from './PillButton'
 import { ChevronRight, ExternalLink } from 'lucide-react'
 import Link from 'next/link'
+import sampleImg from '@/public/data/images/athena/1.jpg'
 
 export default function CardItem(props: { pills: string[] }) {
   return (
@@ -17,7 +18,7 @@ export default function CardItem(props: { pills: string[] }) {
       <div className='flex flex-col h-full'>
         <div className='w-full h-48 relative'>
           <Image
-            src='/../../../data/Images/athena/1.jpg'
+            src={sampleImg}
             alt='card-image'
             layout='fill'
           />
