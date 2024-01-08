@@ -37,7 +37,7 @@ export default async function IndividualProjectPage({
     process.cwd(),
     'public',
     'static',
-    'markdown',
+    'Markdown',
     data[project].md
   )
   markDownContent = await fs.readFile(mdFilePath, 'utf8')
