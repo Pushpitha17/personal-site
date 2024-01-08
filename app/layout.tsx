@@ -1,6 +1,8 @@
 import type { Metadata } from 'next'
 import { Inter } from 'next/font/google'
 import './globals.css'
+import Container from '@/components/ui/Container'
+import ThemeSwitch from '@/components/Custom/ThemeSwitch'
 
 const inter = Inter({ subsets: ['latin'] })
 
@@ -15,8 +17,21 @@ export default function RootLayout({
   children: React.ReactNode
 }) {
   return (
-    <html lang="en">
-      <body className={inter.className}>{children}</body>
+    <html lang='en'>
+      <body className={inter.className}>
+        <div className='py-5'>
+          <Container>
+            <div className='flex w-100 justify-between	'>
+              <p className='text-lg font-extrabold leading-none tracking-tight title-text'>
+                Pushpitha Geeganage
+              </p>
+              <ThemeSwitch />
+            </div>
+          </Container>
+        </div>
+        <hr className='h-1 border-0 bg-border'></hr>
+        {children}
+      </body>
     </html>
   )
 }

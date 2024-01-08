@@ -1,0 +1,9 @@
+.markdown p {
+  margin: 0 0 1rem;
+}
+
+.markdown ul {
+  margin: 0 0 1rem;
+  list-style-type: bullet;
+  padding-left: 2rem;
+}
