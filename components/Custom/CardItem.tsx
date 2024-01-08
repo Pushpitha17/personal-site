@@ -17,10 +17,10 @@ export default function CardItem(props: { pills: string[] }) {
     <Card className='lg:max-w-xs w-full border shadow-lg transition-transform duration-300 transform hover:shadow-xl hover:translate-y-[-6px]'>
       <div className='flex flex-col h-full'>
         <div className='w-full h-48 relative'>
-          <Image
-            src={sampleImg}
+          <img
+            src='/static/Images/athena/1.jpg'
             alt='card-image'
-            layout='fill'
+            className='w-full h-full object-cover'
           />
         </div>
         <CardHeader>
