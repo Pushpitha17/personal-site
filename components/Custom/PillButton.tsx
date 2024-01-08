@@ -1,6 +1,6 @@
 'use client'
 import React from 'react'
-import { colorMappings, textColor } from '@/public/Data/colorMappings'
+import { colorMappings, textColor } from '@/public/Data/colorMappings.js'
 
 function PillButton(props: { text: string }) {
   const { text } = props
