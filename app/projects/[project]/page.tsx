@@ -5,26 +5,46 @@ import remarkGfm from 'remark-gfm'
 import ImageCarousel from '@/components/Custom/ImageCarousel'
 import PillButton from '@/components/Custom/PillButton'
 
+interface Project {
+  title: string
+  name: string
+  md: string
+  tags: string[]
+  imgs: string[]
+}
+
+interface ProjectData {
+  [key: string]: Project
+}
+
 export default async function IndividualProjectPage({
   params,
 }: {
   params: { project: string }
 }) {
+  const environment = process.env.NEXT_PUBLIC_ENVIRONMENT || 'development'
+
   const { project } = params
+  let markDownContent = ''
+  let data: ProjectData = {}
 
-  console.log(project)
+  if (environment === 'development') {
+    const file = await fs.readFile(
+      process.cwd() + '/public/Data/data.json',
+      'utf8'
+    )
+    data = JSON.parse(file)
 
-  const file = await fs.readFile(
-    process.cwd() + '/public/Data/data.json',
-    'utf8'
-  )
-  const data = JSON.parse(file)
-  console.log(data)
+    markDownContent = await fs.readFile(
+      process.cwd() + data[project].md,
+      'utf8'
+    )
+  } else {
+    const file = await fs.readFile('/public/Data/data.json', 'utf8')
+    data = JSON.parse(file)
 
-  const markDownContent = await fs.readFile(
-    process.cwd() + data[project].md,
-    'utf8'
-  )
+    markDownContent = await fs.readFile(data[project].md, 'utf8')
+  }
 
   // let images = data[project].imgs.map((img: string) => {
   //   return `/data/Images/${img}`
@@ -59,16 +79,3 @@ export default async function IndividualProjectPage({
     </main>
   )
 }
-
-// export const getStaticPaths: GetStaticPaths = async () => {
-//   const files = fs.readdirSync(path.join(process.cwd(), 'public/Data/Markdown')) // Adjust the directory accordingly
-
-//   const paths = files.map((file) => ({
-//     params: { slug: file.replace(/\.md$/, '') },
-//   }))
-
-//   return {
-//     paths,
-//     fallback: false,
-//   }
-// }
