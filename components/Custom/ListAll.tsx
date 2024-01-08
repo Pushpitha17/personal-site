@@ -3,6 +3,7 @@ import React from 'react'
 import Container from '../ui/Container'
 import CardItem from './CardItem'
 import PillButton from './PillButton'
+import Link from 'next/link'
 
 function ListAll() {
   const stack = ['React', 'Material Ui', 'Strapi', 'Google Cloud', 'firebase']
@@ -15,7 +16,9 @@ function ListAll() {
         </p>
         <div>
           <div className='grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-4'>
-            <CardItem pills={stack} />
+            <Link href='/projects/athena'>
+              <CardItem pills={stack} />
+            </Link>
             {/* <CardItem />
             <CardItem />
             <CardItem /> */}

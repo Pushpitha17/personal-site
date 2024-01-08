@@ -2,7 +2,7 @@
   "athena": {
     "title": "Project Athena",
     "name": "Content Hosting Platform",
-    "md": "/public/Data/Markdown/athena.md",
+    "md": "athena.md",
     "tags": ["React", "Material Ui", "Strapi", "Google Cloud", "firebase"],
     "imgs": ["athena/1.jpg", "athena/2.jpg", "athena/3.jpg", "athena/4.png"]
   }

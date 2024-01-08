@@ -33,9 +33,15 @@ export default async function IndividualProjectPage({
   const file = await fs.readFile(filePath, 'utf8')
   data = JSON.parse(file)
 
-  const mdFilePath = path.join(process.cwd(), data[project].md)
+  const mdFilePath = path.join(
+    process.cwd(),
+    'public',
+    'static',
+    'markdown',
+    data[project].md
+  )
   markDownContent = await fs.readFile(mdFilePath, 'utf8')
-  
+
   // let images = data[project].imgs.map((img: string) => {
   //   return `/data/Images/${img}`
   // })
