@@ -47,8 +47,8 @@ export default async function IndividualProjectPage({
   // })
   let images = data[project].imgs.map((img: string) => {
     return {
-      original: `/data/Images/${img}`,
-      thumbnail: `/data/Images/${img}`,
+      original: `/static/Images/${img}`,
+      thumbnail: `/static/Images/${img}`,
     }
   })
 
