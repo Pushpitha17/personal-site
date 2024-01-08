@@ -17,7 +17,7 @@ export default function CardItem(props: { pills: string[] }) {
       <div className='flex flex-col h-full'>
         <div className='w-full h-48 relative'>
           <Image
-            src='/data/Images/athena/1.jpg'
+            src='/../../../data/Images/athena/1.jpg'
             alt='card-image'
             layout='fill'
           />
