@@ -24,7 +24,7 @@ export default function RootLayout({
     <html lang='en'>
       <ChakraProvider>
         <body className={inter.className}>
-          <div className='flex flex-col min-h-screen'>
+          <div className="flex flex-col min-h-screen  bg-[url('/static/Images/dot-grid.png')] dark:bg-none">
             <div className='py-5	'>
               <Container>
                 <div className='flex w-100 justify-between	'>

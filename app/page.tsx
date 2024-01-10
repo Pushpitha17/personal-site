@@ -2,14 +2,14 @@ import Container from '@/components/ui/Container'
 
 export default function Home() {
   return (
-    <main className='py-10'>
+    <main className='py-10 '>
       <Container>
         <div className='flex'>
-          <div className='w-8/12'>
+          <div className='md:w-8/12'>
             <h2>
               <div className='flex items-center md:items-end  mb-4 md:pl-16'>
                 <div className='animate-wave text-7xl'>👋</div>
-                <p className='text-3xl font-extrabold text-gray-900 dark:text-white md:text-4xl lg:text-5xl'>
+                <p className='text-4xl pl-5 md:pl-2 font-extrabold text-gray-900 dark:text-white md:text-4xl lg:text-5xl'>
                   Hi, I&apos;m Pushpitha
                 </p>
               </div>

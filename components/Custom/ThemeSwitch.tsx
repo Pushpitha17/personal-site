@@ -1,19 +1,18 @@
 'use client'
 import React, { useEffect, useLayoutEffect, useState } from 'react'
-import { Sun } from 'lucide-react';
-import { Moon } from 'lucide-react';
+import { Sun } from 'lucide-react'
+import { Moon } from 'lucide-react'
 
 function ThemeSwitch() {
-
   const DARK = 'dark'
   const LIGHT = 'light'
 
   const [mode, setMode] = useState('')
 
   useLayoutEffect(() => {
-
-    const prefersDark = window.matchMedia('(prefers-color-scheme: dark)')
-      .matches;
+    const prefersDark = window.matchMedia(
+      '(prefers-color-scheme: dark)'
+    ).matches
 
     if (prefersDark) {
       setMode(DARK)
@@ -32,23 +31,22 @@ function ThemeSwitch() {
 
   useEffect(() => {
     const el = document.getElementsByTagName('html')
+    const body = document.getElementsByTagName('body')
 
     if (el) {
       if (mode === DARK) {
-        el[0].setAttribute('data-theme', 'dark');
+        el[0].setAttribute('data-theme', 'dark')
         el[0].classList.add('dark')
+        body[0].classList.add('dark')
       } else {
-        el[0].setAttribute('data-theme', 'light');
+        el[0].setAttribute('data-theme', 'light')
         el[0].classList.remove('dark')
+        body[0].classList.remove('dark')
       }
     }
   }, [mode])
 
-  return (
-    <div onClick={handleSwitch}>
-      {mode === DARK ? (<Moon />) : <Sun />}
-    </div>
-  )
+  return <div onClick={handleSwitch}>{mode === DARK ? <Moon /> : <Sun />}</div>
 }
 
 export default ThemeSwitch

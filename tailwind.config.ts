@@ -27,6 +27,9 @@ module.exports = {
       blue: colors.blue,
     },
     extend: {
+      backgroundImage: {
+        dots: "url('/static/Images/dot-grid.png')",
+      },
       colors: {
         border: 'hsl(var(--border))',
         input: 'hsl(var(--input))',
