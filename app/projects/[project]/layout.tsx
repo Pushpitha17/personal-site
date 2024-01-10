@@ -9,7 +9,7 @@ export default function RootLayout({
   return (
     <Container>
       <div>
-        <BreadCrumbs path={['Projects', "Project Athena"]}></BreadCrumbs>
+        <BreadCrumbs path={[{ name: 'Projects', url: '/projects' }, {name: "Project Athena"}]}></BreadCrumbs>
       </div>
       {children}
     </Container>

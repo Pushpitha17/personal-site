@@ -1,8 +1,12 @@
+import { useRef } from 'react'
 import type { Metadata } from 'next'
 import { Inter } from 'next/font/google'
 import './globals.css'
 import Container from '@/components/ui/Container'
 import ThemeSwitch from '@/components/Custom/ThemeSwitch'
+import DrawerNavigation from '@/components/Custom/DrawerNavigation'
+import { ChakraProvider } from '@chakra-ui/react'
+import { Instagram, Github, Linkedin } from 'lucide-react'
 
 const inter = Inter({ subsets: ['latin'] })
 
@@ -18,20 +22,42 @@ export default function RootLayout({
 }) {
   return (
     <html lang='en'>
-      <body className={inter.className}>
-        <div className='py-5'>
-          <Container>
-            <div className='flex w-100 justify-between	'>
-              <p className='text-lg font-extrabold leading-none tracking-tight title-text'>
-                Pushpitha Geeganage
-              </p>
-              <ThemeSwitch />
+      <ChakraProvider>
+        <body className={inter.className}>
+          <div className='flex flex-col min-h-screen'>
+            <div className='py-5	'>
+              <Container>
+                <div className='flex w-100 justify-between	'>
+                  <p className='text-lg font-extrabold leading-none tracking-tight title-text'>
+                    Pushpitha Geeganage
+                  </p>
+                  <div className='flex'>
+                    <ThemeSwitch />
+                    <div>
+                      <DrawerNavigation />
+                    </div>
+                  </div>
+                </div>
+              </Container>
             </div>
-          </Container>
-        </div>
-        <hr className='h-1 border-0 bg-border'></hr>
-        {children}
-      </body>
+            <hr className='h-1 border-0 bg-border'></hr>
+            <div className='flex-grow'>{children}</div>
+            <div>
+              <Container>
+                <hr></hr>
+                <div className='md:flex justify-between'>
+                  <div> © Pushpitha Geeganage, 2024</div>
+                  <div className='flex'>
+                    <Github />
+                    <Linkedin />
+                    <Instagram />
+                  </div>
+                </div>
+              </Container>
+            </div>
+          </div>
+        </body>
+      </ChakraProvider>
     </html>
   )
 }

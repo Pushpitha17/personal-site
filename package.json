@@ -9,11 +9,15 @@
     "lint": "next lint"
   },
   "dependencies": {
+    "@chakra-ui/react": "^2.8.2",
+    "@emotion/react": "^11.11.3",
+    "@emotion/styled": "^11.11.0",
     "@radix-ui/react-slot": "^1.0.2",
     "@types/react-image-gallery": "^1.2.4",
     "class-variance-authority": "^0.7.0",
     "clsx": "^2.0.0",
     "embla-carousel-react": "^8.0.0-rc19",
+    "framer-motion": "^10.17.12",
     "lucide-react": "^0.287.0",
     "next": "13.5.5",
     "react": "^18",
@@ -30,6 +34,7 @@
     "@types/react": "^18",
     "@types/react-dom": "^18",
     "autoprefixer": "^10",
+    "daisyui": "^4.5.0",
     "eslint": "^8",
     "eslint-config-next": "13.5.5",
     "postcss": "^8",

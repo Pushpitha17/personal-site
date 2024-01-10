@@ -32,7 +32,10 @@ export default function CardItem(props: { pills: string[] }) {
               </Link>
             </div>
           </CardTitle>
-          <CardDescription>A Content distrubtion platform</CardDescription>
+          <CardDescription>
+            Athena is a content hosting and distribution platform. It is the longest and most active project I have
+            worked on so far. It is where i started learning what it is to build software. 
+          </CardDescription>
         </CardHeader>
         <CardContent>
           <div className='flex flex-wrap'>
