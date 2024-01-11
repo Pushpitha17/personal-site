@@ -25,6 +25,8 @@ module.exports = {
       red: colors.rose,
       yellow: colors.amber,
       blue: colors.blue,
+      pink: '#f87171',
+      lightPink: '#fda4af',
     },
     extend: {
       backgroundImage: {
