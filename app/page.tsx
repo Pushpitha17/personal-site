@@ -20,16 +20,15 @@ export default function Home() {
               </div>
             </h2>
             <div className='max-w-screen-md md:pl-24'>
-              <p className='mt-8 text-lg font-normal leading-8'>
+              <p className='mt-8 text-lg font-normal leading-8 text-gray-900 dark:text-white'>
                 Currently , I am a final year{' '}
                 <strong className='text-pink'>
                   Materials science and Engineering Undergraduate
                 </strong>{' '}
                 at University of Moratuwa, by Day and{' '}
-                <strong className='text-pink'>A Programmer</strong> by
-                Night.👨🏾‍💻
+                <strong className='text-pink'>A Programmer</strong> by Night.👨🏾‍💻
               </p>
-              <p className='mt-2 text-lg font-normal  leading-8'>
+              <p className='mt-2 text-lg font-normal  leading-8 text-gray-900 dark:text-white'>
                 Apart from that most of my time goes to keeping up with cricket
                 matches and{' '}
                 <a
@@ -46,7 +45,7 @@ export default function Home() {
               <Link href='/about'>
                 <button
                   type='button'
-                  className='bg-background border border-pink text-pink hover:bg-pink hover:text-white focus:outline-none hover:bg-gray-100 focus:ring-4 focus:ring-gray-200 font-medium rounded-lg text-sm px-5 py-2.5 me-2 mb-2 dark:bg-transparent
+                  className='bg-none border border-pink text-pink hover:bg-pink hover:text-white focus:outline-none hover:bg-gray-100 focus:ring-4 focus:ring-gray-200 font-medium rounded-lg text-sm px-5 py-2.5 me-2 mb-2 dark:bg-transparent
                  dark:text-lightPink dark:border-lightPink dark:hover:bg-pink dark:hover:text-white  dark:focus:ring-gray-700'
                 >
                   About Me
@@ -62,27 +61,27 @@ export default function Home() {
                 </button>
               </Link>
             </div>
-            <div className='flex md:py-0 md:pl-24 mt-5'>
+            <div className='flex md:py-0 md:pl-24 mt-5 text-pink dark:text-lightPink'>
               <a
                 href='https://www.instagram.com/pushpe_17/'
                 className='mr-3'
                 target='blank'
               >
-                <Instagram color='#fda4af' size={32} strokeWidth={2} />
+                <Instagram size={32} strokeWidth={2} />
               </a>
               <a
                 href='https://www.linkedin.com/in/pushpitha-geeganage-b98280171/'
                 className='mr-3'
                 target='blank'
               >
-                <Linkedin color='#fda4af' size={32} strokeWidth={2} />
+                <Linkedin size={32} strokeWidth={2} />
               </a>
               <a
                 href='https://github.com/Pushpitha17'
                 className='mr-3'
                 target='blank'
               >
-                <Github color='#fda4af' size={32} strokeWidth={2} />
+                <Github size={32} strokeWidth={2} />
               </a>
             </div>
           </div>

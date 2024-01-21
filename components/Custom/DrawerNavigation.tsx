@@ -28,14 +28,14 @@ function DrawerNavigation() {
         finalFocusRef={btnRef}
       >
         <DrawerOverlay />
-        <DrawerContent>
-          <DrawerCloseButton />
+        <DrawerContent  className='dark:text-white text-gray-900'>
+          <DrawerCloseButton className='dark:text-white text-gray-900'/>
           <DrawerHeader></DrawerHeader>
           <DrawerBody>
-            <ul className='space-y-2 text-lg font-semibold'>
+            <ul className='space-y-2 text-lg font-semibold '>
               <li>
                 <Link href='/' className='' onClick={onClose}>
-                  <div className='my-6'> Home </div>
+                  <div className='my-6 text-gray-900 dark:text-white'> Home </div>
                 </Link>
               </li>
               <li>

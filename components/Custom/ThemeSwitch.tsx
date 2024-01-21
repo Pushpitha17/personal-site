@@ -2,51 +2,35 @@
 import React, { useEffect, useLayoutEffect, useState } from 'react'
 import { Sun } from 'lucide-react'
 import { Moon } from 'lucide-react'
+import { Loader2 } from 'lucide-react'
+import { useTheme } from 'next-themes'
 
 function ThemeSwitch() {
-  const DARK = 'dark'
-  const LIGHT = 'light'
+  const [mounted, setMounted] = useState(false)
+  const { setTheme, resolvedTheme } = useTheme()
 
-  const [mode, setMode] = useState('')
-
-  useLayoutEffect(() => {
-    const prefersDark = window.matchMedia(
-      '(prefers-color-scheme: dark)'
-    ).matches
-
-    if (prefersDark) {
-      setMode(DARK)
-    } else {
-      setMode(LIGHT)
-    }
-  }, [setMode])
-
-  const handleSwitch = () => {
-    if (mode === DARK) {
-      setMode(LIGHT)
-    } else {
-      setMode(DARK)
-    }
-  }
+  useEffect(() => setMounted(true), [])
 
   useEffect(() => {
     const el = document.getElementsByTagName('html')
-    const body = document.getElementsByTagName('body')
-
     if (el) {
-      if (mode === DARK) {
+      if (resolvedTheme === 'dark') {
         el[0].setAttribute('data-theme', 'dark')
-        el[0].classList.add('dark')
-        body[0].classList.add('dark')
       } else {
         el[0].setAttribute('data-theme', 'light')
-        el[0].classList.remove('dark')
-        body[0].classList.remove('dark')
       }
     }
-  }, [mode])
+  }, [resolvedTheme])
 
-  return <div onClick={handleSwitch}>{mode === DARK ? <Moon /> : <Sun />}</div>
+  if (!mounted) return <Loader2 />
+
+  if (resolvedTheme === 'dark') {
+    return <Sun onClick={() => setTheme('light')} />
+  }
+
+  if (resolvedTheme === 'light') {
+    return <Moon onClick={() => setTheme('dark')} />
+  }
 }
 
 export default ThemeSwitch
