@@ -5,5 +5,12 @@
     "md": "athena.md",
     "tags": ["React", "Material Ui", "Strapi", "Google Cloud", "firebase"],
     "imgs": ["athena/1.jpg", "athena/2.jpg", "athena/3.jpg", "athena/4.png"]
+  },
+  "hermes": {
+    "title": "Project Hermes",
+    "name": "Content Hosting Platform",
+    "md": "athena.md",
+    "tags": ["React", "Material Ui", "Strapi", "Google Cloud", "firebase"],
+    "imgs": ["hermes/1.jpg", "hermes/2.jpg", "hermes/3.png"]
   }
 }

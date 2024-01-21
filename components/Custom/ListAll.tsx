@@ -1,30 +1,27 @@
 'use client'
 import React from 'react'
-import Container from '../ui/Container'
 import CardItem from './CardItem'
-import PillButton from './PillButton'
 import Link from 'next/link'
 
-function ListAll() {
+function ListAll(props: { data: any[] }) {
   const stack = ['React', 'Material Ui', 'Strapi', 'Google Cloud', 'firebase']
+
+  console.log({ 'professional proetcs': props.data })
 
   return (
     <div>
-      <Container>
-        <p className='mb-4 text-3xl font-extrabold leading-none tracking-tight md:text-4xl dark:text-primary'>
-          Projects
-        </p>
-        <div>
-          <div className='grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-4'>
-            <Link href='/projects/athena'>
-              <CardItem pills={stack} />
+      <div>
+        <div className='grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-8'>
+          {props.data.map((project, index) => (
+            <Link href={`/projects/${project.route}`} key={index}>
+              <CardItem project={project} />
             </Link>
-            {/* <CardItem />
+          ))}
+          {/* <CardItem />
             <CardItem />
             <CardItem /> */}
-          </div>
         </div>
-      </Container>
+      </div>
     </div>
   )
 }

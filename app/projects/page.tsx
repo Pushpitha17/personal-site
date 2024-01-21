@@ -1,9 +1,70 @@
 import ListAll from '@/components/Custom/ListAll'
+import Container from '@/components/ui/Container'
+import BreadCrumbs from '@/components/Custom/breadCrumbs'
+import projects from '@/public/Data/projects.js'
 
-export default function Home() {
+export default async function Projects() {
+
+  const professionalProjects = projects.professional
+  // const freeeLanceProjects = projects[1]
+  // const personalProjects = projects[2]
+
+  console.log({professionalProjects})
+
   return (
-    <main className="py-10">
-      <ListAll/>
+    <main className='py-4'>
+      <Container>
+        <div>
+          <BreadCrumbs
+            path={[{ name: 'Projects', url: '/projects' }]}
+          ></BreadCrumbs>
+        </div>
+        <p className='mb-4 text-3xl font-extrabold leading-none tracking-tight md:text-4xl dark:text-primary'>
+          Projects
+        </p>
+        <div className='mb-10'>
+          <p className='text-lg text-gray-700 dark:text-gray-300'>
+            This page showcases some of the software projects I've been involved
+            in over the past 2-3 years
+          </p>
+          <p className='text-lg text-gray-700 dark:text-gray-300'>
+            I have curated a list of diverse projects that demonstrate my
+            experience as a software developer.
+          </p>
+        </div>
+        <div className='mb-10'>
+          <p className='mb-4 text-xl font-extrabold leading-none tracking-tight md:text-2xl dark:text-primary'>
+            Professional Projects
+          </p>
+          <div className=' mb-8 text-lg text-gray-700 dark:text-gray-300'>
+            <p className=''>
+              I contributed to these projects as a part-time Junior Software
+              Developer at{' '}
+              <a
+                href='https://www.frontiergroup.info/'
+                className='underline'
+                target='blank'
+              >
+                Frontier Research
+              </a>
+              {'   '}for over 2 years.
+            </p>
+          </div>
+          <ListAll data={professionalProjects} />
+        </div>
+        <div className='mb-10'>
+          <p className='mb-4 text-xl font-extrabold leading-none tracking-tight md:text-2xl dark:text-primary'>
+            Freelance Projects
+          </p>
+          {/* <ListAll /> */}
+        </div>
+        <div className='mb-10'>
+          <p className='mb-4 text-xl font-extrabold leading-none tracking-tight md:text-2xl dark:text-primary'>
+            Personal Projects
+          </p>
+          {/* <ListAll /> */}
+        </div>
+      </Container>
     </main>
   )
 }
