@@ -24,7 +24,7 @@ export default async function Projects() {
         </p>
         <div className='mb-10'>
           <p className='text-lg text-gray-700 dark:text-gray-300'>
-            This page showcases some of the software projects I've been involved
+            This page showcases some of the software projects I&apos;ve been involved
             in over the past 2-3 years
           </p>
           <p className='text-lg text-gray-700 dark:text-gray-300'>

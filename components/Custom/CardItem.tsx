@@ -37,7 +37,7 @@ export default function CardItem(props: { project: any }) {
         </CardHeader>
         <CardContent>
           <div className='flex flex-wrap'>
-            {tags.map((tag) => (
+            {tags.map((tag: any) => (
               <PillButton key={tag} text={tag} />
             ))}
           </div>

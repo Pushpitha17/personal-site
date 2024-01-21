@@ -12,7 +12,7 @@ export default function Home() {
               <div className='flex items-center md:items-end  mb-4 md:pl-16'>
                 <div className='animate-wave text-7xl'>👋</div>
                 <p className='text-4xl pl-5 md:pl-2 font-extrabold text-gray-900 dark:text-white md:text-4xl lg:text-5xl'>
-                  Hi,  I&apos;m Pushpitha
+                  Hi, I&apos;m Pushpitha
                 </p>
                 {/* <p className='text-4xl pl-5 md:pl-8 font-extrabold text-gray-900 dark:text-white md:text-4xl lg:text-5xl'>
                   Hey ! I&apos;m Pushpitha 😀
@@ -22,9 +22,12 @@ export default function Home() {
             <div className='max-w-screen-md md:pl-24'>
               <p className='mt-8 text-lg font-normal leading-8'>
                 Currently , I am a final year{' '}
-                <strong className='text-lightPink'>Materials science and Engineering Undergraduate</strong>{' '}
+                <strong className='text-lightPink'>
+                  Materials science and Engineering Undergraduate
+                </strong>{' '}
                 at University of Moratuwa, by Day and{' '}
-                <strong className='text-lightPink'>a Programmer</strong> by Night.👨🏾‍💻
+                <strong className='text-lightPink'>a Programmer</strong> by
+                Night.👨🏾‍💻
               </p>
               <p className='mt-2 text-lg font-normal  leading-8'>
                 Apart from that most of my time goes to keeping up with cricket
