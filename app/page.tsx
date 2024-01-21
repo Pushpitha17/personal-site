@@ -26,7 +26,7 @@ export default function Home() {
                   Materials science and Engineering Undergraduate
                 </strong>{' '}
                 at University of Moratuwa, by Day and{' '}
-                <strong className='text-pink'>Programmer</strong> by
+                <strong className='text-pink'>A Programmer</strong> by
                 Night.👨🏾‍💻
               </p>
               <p className='mt-2 text-lg font-normal  leading-8'>
