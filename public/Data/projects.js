@@ -17,7 +17,7 @@ const projects = {
       link: 'https://athena.frontiergroup.info/',
       tags: ['React', 'Material Ui', 'Strapi', 'Google Cloud', 'firebase'],
       publicRepo: true,
-      image: '/static/Images/hermes/1.jpg',
+      image: '/static/Images/Hermes/1.jpg',
     },
   ],
 }

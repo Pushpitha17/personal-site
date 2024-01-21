@@ -11,6 +11,6 @@
     "name": "Content Hosting Platform",
     "md": "athena.md",
     "tags": ["React", "Material Ui", "Strapi", "Google Cloud", "firebase"],
-    "imgs": ["hermes/1.jpg", "hermes/2.jpg", "hermes/3.png"]
+    "imgs": ["Hermes/1.jpg", "Hermes/2.jpg", "Hermes/3.png"]
   }
 }

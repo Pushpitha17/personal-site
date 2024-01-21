@@ -22,11 +22,11 @@ export default function Home() {
             <div className='max-w-screen-md md:pl-24'>
               <p className='mt-8 text-lg font-normal leading-8'>
                 Currently , I am a final year{' '}
-                <strong className='text-lightPink'>
+                <strong className='text-pink'>
                   Materials science and Engineering Undergraduate
                 </strong>{' '}
                 at University of Moratuwa, by Day and{' '}
-                <strong className='text-lightPink'>a Programmer</strong> by
+                <strong className='text-pink'>Programmer</strong> by
                 Night.👨🏾‍💻
               </p>
               <p className='mt-2 text-lg font-normal  leading-8'>
