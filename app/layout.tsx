@@ -43,12 +43,12 @@ export default function RootLayout({
                     </div>
                   </div>
                 </Container>
-              </div>
-              <hr className='h-0.5 border-0 bg-gray-300 dark:bg-border'></hr>
+              </div> 
+              <hr className='h-0.5 border-0 bg-gray-300 dark:bg-gray-700'></hr>
               <div className='flex-grow'>{children}</div>
               <div>
                 <Container>
-                  <hr></hr>
+                  <hr className='border-black dark:border-gray-700'></hr>
                   <div className='md:flex justify-between py-5 ml-3 dark:text-white text-gray-900'>
                     <div> © Pushpitha Geeganage, 2024</div>
                     <div className='flex py-3 md:py-0'>

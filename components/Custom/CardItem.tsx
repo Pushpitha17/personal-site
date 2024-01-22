@@ -15,7 +15,7 @@ export default function CardItem(props: { project: any }) {
   const { name, description, link, tags, publicRepo, image } = props.project
 
   return (
-    <Card className='lg:max-w-sm w-full border shadow-lg transition-transform duration-300 transform hover:shadow-xl hover:translate-y-[-6px]'>
+    <Card className='lg:max-w-sm w-full border-double shadow-lg transition-transform duration-300 transform hover:shadow-xl hover:translate-y-[-6px] bg-background'>
       <div className='flex flex-col h-full'>
         <div className='w-full h-48 relative'>
           <img

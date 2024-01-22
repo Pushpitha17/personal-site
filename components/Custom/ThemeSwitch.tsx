@@ -11,19 +11,19 @@ function ThemeSwitch() {
 
   useEffect(() => setMounted(true), [])
 
-  useEffect(() => {
-    console.log({ resolvedTheme })
-    const el = document.getElementsByTagName('html')
-    if (el) {
-      if (resolvedTheme === 'dark') {
-        el[0].setAttribute('data-theme', 'dark')
-        console.log("this is dark theme")
+  // useEffect(() => {
+  //   console.log({ resolvedTheme })
+  //   const el = document.getElementsByTagName('html')
+  //   if (el) {
+  //     if (resolvedTheme === 'dark') {
+  //       el[0].classList.add("dark");
+  //       console.log("this is dark theme")
 
-      } else {
-        el[0].setAttribute('data-theme', 'light')
-      }
-    }
-  }, [resolvedTheme, mounted])
+  //     } else {
+  //       el[0].classList.remove("dark");
+  //     }
+  //   }
+  // }, [resolvedTheme, mounted])
 
   if (!mounted) return <Loader2 />
 

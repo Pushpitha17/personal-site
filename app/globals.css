@@ -78,7 +78,7 @@
     /* font-family: Poppins,sans-serif!important */
   }
 
-  @media (prefers-color-scheme: dark) {
+  /* @media (prefers-color-scheme: dark) {
     :root {
       --background: 222.2 84% 4.9%;
       --foreground: 210 40% 98%;
@@ -108,9 +108,9 @@
       --input: 217.2 32.6% 17.5%;
       --ring: 212.7 26.8% 83.9%;
     }
-  }
+  } */
 
-  /* :root[data-theme='light'] {
+  :root[data-theme='light'] {
     --background: 0 0% 100%;
     --foreground: 222.2 84% 4.9%;
 
@@ -176,7 +176,7 @@
 
     --title-text: #fda4af;
     --black: #000000;
-  } */
+  }
 }
 
 .title-text {

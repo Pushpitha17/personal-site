@@ -19,7 +19,7 @@ export default async function Projects() {
             path={[{ name: 'Projects', url: '/projects' }]}
           ></BreadCrumbs>
         </div>
-        <p className='mb-4 text-3xl font-extrabold leading-none tracking-tight md:text-4xl dark:text-primary'>
+        <p className='mb-4 text-3xl font-extrabold leading-none tracking-tight md:text-4xl'>
           Projects
         </p>
         <div className='mb-10'>
@@ -33,7 +33,7 @@ export default async function Projects() {
           </p>
         </div>
         <div className='mb-10'>
-          <p className='mb-4 text-xl font-extrabold leading-none tracking-tight md:text-2xl dark:text-primary'>
+          <p className='mb-4 text-xl font-extrabold leading-none tracking-tight md:text-2xl'>
             Professional Projects
           </p>
           <div className=' mb-8 text-lg text-gray-700 dark:text-gray-300'>
@@ -53,13 +53,13 @@ export default async function Projects() {
           <ListAll data={professionalProjects} />
         </div>
         <div className='mb-10'>
-          <p className='mb-4 text-xl font-extrabold leading-none tracking-tight md:text-2xl dark:text-primary'>
+          <p className='mb-4 text-xl font-extrabold leading-none tracking-tight md:text-2xl'>
             Freelance Projects
           </p>
           {/* <ListAll /> */}
         </div>
         <div className='mb-10'>
-          <p className='mb-4 text-xl font-extrabold leading-none tracking-tight md:text-2xl dark:text-primary'>
+          <p className='mb-4 text-xl font-extrabold leading-none tracking-tight md:text-2xl'>
             Personal Projects
           </p>
           {/* <ListAll /> */}
