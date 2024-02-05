@@ -4,7 +4,7 @@ import Link from 'next/link'
 
 export default function Home() {
   return (
-    <main className='py-10 '>
+    <main className='py-10 md:pt-20'>
       <Container>
         <div className='flex'>
           <div className='md:w-8/12'>
@@ -86,7 +86,7 @@ export default function Home() {
             </div>
           </div>
           <div className='w-4/12 hidden md:block'>
-            <div className='w-8/12 mx-auto mt-20'>
+            <div className='w-8/12 mx-auto mt-10'>
               <img src='/static/Images/landing.png' alt='' className='' />
             </div>
           </div>

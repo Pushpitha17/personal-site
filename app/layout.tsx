@@ -43,7 +43,7 @@ export default function RootLayout({
                     </div>
                   </div>
                 </Container>
-              </div> 
+              </div>
               <hr className='h-0.5 border-0 bg-gray-300 dark:bg-gray-700'></hr>
               <div className='flex-grow'>{children}</div>
               <div>
