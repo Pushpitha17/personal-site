@@ -6,6 +6,7 @@ import projects from '@/public/Data/projects.js'
 export default async function Projects() {
 
   const professionalProjects = projects.professional
+  const personalProjects = projects.personal
   // const freeeLanceProjects = projects[1]
   // const personalProjects = projects[2]
 
@@ -54,17 +55,18 @@ export default async function Projects() {
         </div>
         <div className='mb-10'>
           <p className='mb-4 text-xl font-extrabold leading-none tracking-tight md:text-2xl'>
+            Personal Projects
+          </p>
+          <ListAll data={personalProjects} />
+        </div>
+        <div className='mb-10'>
+          <p className='mb-4 text-xl font-extrabold leading-none tracking-tight md:text-2xl'>
             Freelance Projects
           </p>
           {/* <ListAll /> */}
         </div>
-        <div className='mb-10'>
-          <p className='mb-4 text-xl font-extrabold leading-none tracking-tight md:text-2xl'>
-            Personal Projects
-          </p>
-          {/* <ListAll /> */}
-        </div>
       </Container>
+
     </main>
   )
 }

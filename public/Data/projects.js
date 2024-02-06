@@ -15,11 +15,51 @@ const projects = {
       description: `Hermes is an internal data managing application. Its main features include bulk email sending ,client management and internal user management. 
     `,
       link: 'https://athena.frontiergroup.info/',
-      tags: ['React', 'Material Ui', 'Strapi', 'Google Cloud', 'firebase'],
+      tags: ['React', 'Material Ui', 'Google Cloud', 'firebase'],
       publicRepo: true,
       image: '/static/Images/Hermes/1.jpg',
     },
   ],
+  personal: [
+    {
+      name: 'This Portfolio Site',
+      route: 'portfolio',
+      description: `I built this site primarality to demonstrate my software projects. I Plan on to use this as a personal blog.`,
+      link: 'https://athena.frontiergroup.info/',
+      tags: ['NextJs', 'Tailwind', 'Markdown'],
+      publicRepo: true,
+      image: '/static/Images/athena/1.jpg',
+    },
+    {
+      name: 'Research Project - Modeling Rubber Vulcanisation Reaction',
+      route: 'fyp',
+      description: `I built this site primarality to demonstrate my software projects. I Plan on to use this as a personal blog.`,
+      link: 'https://athena.frontiergroup.info/',
+      tags: ['React', 'Material Ui', 'Strapi', 'Google Cloud', 'firebase'],
+      publicRepo: true,
+      image: '/static/Images/athena/1.jpg',
+    },
+  ],
+  freelance: [
+    {
+      name: 'Purchase Order Management System',
+      route: 'order-management',
+      description: ``,
+      link: 'https://athena.frontiergroup.info/',
+      tags: ['NextJs', 'Tailwind', 'Markdown'],
+      publicRepo: true,
+      image: '/static/Images/athena/1.jpg',
+    },
+    {
+      name: 'Data Block Visualization',
+      route: 'd3',
+      description: `I built this site primarality to demonstrate my software projects. I Plan on to use this as a personal blog.`,
+      link: 'https://athena.frontiergroup.info/',
+      tags: ['React', 'Material Ui', 'Strapi', 'Google Cloud', 'firebase'],
+      publicRepo: true,
+      image: '/static/Images/athena/1.jpg',
+    },
+  ]
 }
 //   {
 //     'Project Athena': {
