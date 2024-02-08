@@ -10,6 +10,7 @@ import {
 } from '@chakra-ui/react'
 import { Box } from '@chakra-ui/layout'
 import AccordianlItem from '@/components/Custom/AccordianlItem'
+import { Instagram, Facebook, Twitter, Linkedin } from 'lucide-react'
 
 export default async function Projects() {
   return (
@@ -21,7 +22,7 @@ export default async function Projects() {
         <p className='mb-4 text-3xl font-extrabold leading-none tracking-tight md:text-4xl'>
           About Me
         </p>
-        <div className='mb-10'>
+        <div className='mb-5'>
           <p className='text-lg text-gray-700 dark:text-gray-300 text-justify'>
             I am a final year Materials Science and Enginering undergraduate at
             university of Moratuwa.
@@ -37,74 +38,112 @@ export default async function Projects() {
           </p>
         </div>
         <div>
-          <div className="underline-offset-4 underline decoration-solid">Download My Developer Resume</div>
+          <a
+            href='/static/Pushpitha Geeganage - SE.pdf'
+            download='Pushpitha Geeganage Resume'
+          >
+            <div className='underline-offset-4 underline decoration-solid decoration-pink pb-5 text-gray-700 dark:text-gray-300'>
+              Download My Developer Resume
+            </div>
+          </a>
+        </div>
+        <div className='mb-5'>
+          <div className='text-2xl font-semibold mb-3'>Connect</div>
+          <div className='flex text-pink'>
+            <a
+              href='https://www.instagram.com/pushpe_17/'
+              className='mr-3'
+              target='blank'
+            >
+              <Instagram size={24} strokeWidth={1.5} />
+            </a>
+            <a
+              href='https://www.linkedin.com/in/pushpitha-geeganage-b98280171/'
+              className='mr-3'
+              target='blank'
+            >
+              <Facebook size={24} strokeWidth={1.5} />
+            </a>
+            <a
+              href='https://github.com/Pushpitha17'
+              className='mr-3'
+              target='blank'
+            >
+              <Twitter size={24} strokeWidth={1.5} />
+            </a>
+            <a
+              href='https://github.com/Pushpitha17'
+              className='mr-3'
+              target='blank'
+            >
+              <Linkedin size={24} strokeWidth={1.5} />
+            </a>
+          </div>
         </div>
         <div>
-          <Accordion allowToggle>
+          <div className='text-2xl font-semibold mb-3'>More</div>
+          <div className='text-gray-700 dark:text-gray-300'>
+            <Accordion allowToggle>
+              <AccordionItem border='none'>
+                <h2>
+                  <AccordionButton padding={0}>
+                    <span className='text-lg font-semibold'>My Devices</span>
+                    <AccordionIcon className='ml-5' />
+                  </AccordionButton>
+                </h2>
+                <div className='py-2'>
+                  <hr></hr>
+                </div>
+                <AccordionPanel pb={4}>
+                  <AccordianlItem
+                    element={{
+                      title: 'Daily Driver',
+                      item: [{ itemName: 'Google Pixel 7' }],
+                    }}
+                  />
+                  <AccordianlItem
+                    element={{
+                      title: 'PC',
+                      item: [
+                        {
+                          itemName: 'Msi Delta 15',
+                          link: 'https://www.msi.com/Laptop/Delta-15-A5EX/Gallery',
+                        },
+                      ],
+                    }}
+                  />
+                  <AccordianlItem
+                    element={{
+                      title: 'Notes',
+                      item: [{ itemName: 'Samsung Tab S9 FE' }],
+                    }}
+                  />
+                  <AccordianlItem
+                    element={{
+                      title: 'Peripherals',
+                      item: [
+                        { itemName: 'HyperX Alloy Origins Core Keyboard' },
+                        { itemName: 'Razer Viper Mini Mouse' },
+                      ],
+                    }}
+                  />
+                  <AccordianlItem
+                    element={{
+                      title: 'Audio',
+                      item: [
+                        { itemName: 'Sennheiser HD450BT' },
+                        { itemName: 'Samsung Galaxy Buds 2' },
+                      ],
+                    }}
+                  />
+                </AccordionPanel>
+              </AccordionItem>
+            </Accordion>
+            <Accordion allowToggle>
             <AccordionItem border='none'>
               <h2>
                 <AccordionButton padding={0}>
-                  <span className='md:text-xl font-semibold'>
-                    Current Arsenal
-                  </span>
-                  <AccordionIcon className='ml-5' />
-                </AccordionButton>
-              </h2>
-              <div className='py-2'>
-                <hr></hr>
-              </div>
-              <AccordionPanel pb={4}>
-                <AccordianlItem
-                  element={{
-                    title: 'Daily Driver',
-                    item: [{ itemName: 'Google Pixel 7' }],
-                  }}
-                />
-                <AccordianlItem
-                  element={{
-                    title: 'PC',
-                    item: [
-                      {
-                        itemName: 'Msi Delta 15',
-                        link: 'https://www.msi.com/Laptop/Delta-15-A5EX/Gallery',
-                      },
-                    ],
-                  }}
-                />
-                <AccordianlItem
-                  element={{
-                    title: 'Notes',
-                    item: [{ itemName: 'Samsung Tab S9 FE' }],
-                  }}
-                />
-                <AccordianlItem
-                  element={{
-                    title: 'Peripherals',
-                    item: [
-                      { itemName: 'HyperX Alloy Origins Core Keyboard' },
-                      { itemName: 'Razer Viper Mini Mouse' },
-                    ],
-                  }}
-                />
-                <AccordianlItem
-                  element={{
-                    title: 'Audio',
-                    item: [
-                      { itemName: 'Sennheiser HD450BT' },
-                      { itemName: 'Samsung Galaxy Buds 2' },
-                    ],
-                  }}
-                />
-              </AccordionPanel>
-            </AccordionItem>
-          </Accordion>
-        </div>
-        <div>
-          <Accordion allowToggle>
-            <AccordionItem border='none'>
-              <h2>
-                <AccordionButton padding={0}>
-                  <span className='md:text-xl font-semibold'>Cricket</span>
+                  <span className='text-lg font-semibold'>Cricket</span>
                   <AccordionIcon className='ml-5' />
                 </AccordionButton>
               </h2>
@@ -116,10 +155,16 @@ export default async function Projects() {
                   element={{
                     title: 'Current Players I follow',
                     item: [
-                      { itemName: 'Anrich Nortje', link:'https://www.youtube.com/shorts/A3ntJC_KD_Q' },
+                      {
+                        itemName: 'Anrich Nortje',
+                        link: 'https://www.youtube.com/shorts/A3ntJC_KD_Q',
+                      },
                       { itemName: 'Dushmantha Chameera' },
                       { itemName: 'Kane Williamson' },
-                      { itemName: 'Jake Fraser-Mcgurk' , link: 'https://www.cricket.com.au/videos/3875091/every-six-fraser-mcgurk-arrives-as-big-bash-unearths-new-star'},
+                      {
+                        itemName: 'Jake Fraser-Mcgurk',
+                        link: 'https://www.cricket.com.au/videos/3875091/every-six-fraser-mcgurk-arrives-as-big-bash-unearths-new-star',
+                      },
                     ],
                   }}
                 />
@@ -127,7 +172,10 @@ export default async function Projects() {
                   element={{
                     title: 'All time Favorites',
                     item: [
-                      { itemName: 'AB De Villiers', link: 'https://www.youtube.com/watch?v=wg63nWpnN6Q' },
+                      {
+                        itemName: 'AB De Villiers',
+                        link: 'https://www.youtube.com/watch?v=wg63nWpnN6Q',
+                      },
                       { itemName: 'Mahela Jayawardene' },
                       { itemName: 'Ricky Ponting' },
                     ],
@@ -136,6 +184,7 @@ export default async function Projects() {
               </AccordionPanel>
             </AccordionItem>
           </Accordion>
+          </div>
         </div>
       </Container>
     </main>
