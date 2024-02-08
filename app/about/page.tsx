@@ -37,6 +37,9 @@ export default async function Projects() {
           </p>
         </div>
         <div>
+          <div className="underline-offset-4 underline decoration-solid">Download My Developer Resume</div>
+        </div>
+        <div>
           <Accordion allowToggle>
             <AccordionItem border='none'>
               <h2>
@@ -113,10 +116,10 @@ export default async function Projects() {
                   element={{
                     title: 'Current Players I follow',
                     item: [
-                      { itemName: 'Anrich Nortje' },
+                      { itemName: 'Anrich Nortje', link:'https://www.youtube.com/shorts/A3ntJC_KD_Q' },
                       { itemName: 'Dushmantha Chameera' },
                       { itemName: 'Kane Williamson' },
-                      { itemName: 'Jake Fraser-Mcgurk' },
+                      { itemName: 'Jake Fraser-Mcgurk' , link: 'https://www.cricket.com.au/videos/3875091/every-six-fraser-mcgurk-arrives-as-big-bash-unearths-new-star'},
                     ],
                   }}
                 />
@@ -124,7 +127,7 @@ export default async function Projects() {
                   element={{
                     title: 'All time Favorites',
                     item: [
-                      { itemName: 'AB De Villiers' },
+                      { itemName: 'AB De Villiers', link: 'https://www.youtube.com/watch?v=wg63nWpnN6Q' },
                       { itemName: 'Mahela Jayawardene' },
                       { itemName: 'Ricky Ponting' },
                     ],

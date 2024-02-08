@@ -19,7 +19,7 @@ function AccordianlItem(props: { element: AccordianElement }) {
       <div className='pr-3'>:</div>
       <div>
         {props.element.item.map((item, index) => (
-          <div>
+          <div key={index}>
             {item.link ? (
               <Link href={item.link} target="blank">
                 <p className='underline-offset-4 underline decoration-solid pb-2'>
