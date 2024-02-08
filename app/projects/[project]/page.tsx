@@ -66,7 +66,7 @@ export default async function IndividualProjectPage({
         <div className='flex justify-center my-5 flex-1'>
           <ImageCarousel images={images} />
         </div>
-        <div className='markdown flex-1 mr-5 sm:mr-0'>
+        <div className='markdown flex-1 mr-0 md:mr-5'>
           <ReactMarkdown remarkPlugins={[remarkGfm]}>
             {markDownContent}
           </ReactMarkdown>

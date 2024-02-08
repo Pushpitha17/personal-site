@@ -10,12 +10,13 @@ import PillButton from './PillButton'
 import { ChevronRight, ExternalLink } from 'lucide-react'
 import Link from 'next/link'
 import { Github } from 'lucide-react'
+import { Tooltip } from '@chakra-ui/react'
 
-export default function CardItem(props: { project: any }) {
+export default function CardItem(props: { project: any; more?: string }) {
   const { name, description, link, tags, publicRepo, image } = props.project
 
   return (
-    <Card className='lg:max-w-sm w-full border-double shadow-lg transition-transform duration-300 transform hover:shadow-xl hover:translate-y-[-6px] bg-background'>
+    <Card className='lg:max-w-sm w-full border-double shadow-lg transition-transform duration-300 transform hover:shadow-xl hover:translate-y-[-6px] bg-background border-2'>
       <div className='flex flex-col h-full'>
         <div className='w-full h-48 relative'>
           <img
@@ -26,11 +27,22 @@ export default function CardItem(props: { project: any }) {
         </div>
         <CardHeader>
           <CardTitle>
-            <div className='flex flex-row justify-between align-center pt-3'>
+            <div className='flex flex-row justify-between align-center pt-3 leading-8'>
               <p>{name}</p>
-              <Link href={link} target='blank'>
-                <ExternalLink size={20} />
-              </Link>
+              {link ? (
+                <Tooltip label='External Link'>
+                  <Link href={link} target='blank'>
+                    <ExternalLink size={20} />
+                  </Link>
+                </Tooltip>
+              ) : (
+                <Tooltip label='Link Unavailable'>
+                  <ExternalLink
+                    size={20}
+                    className='text-gray-300 dark:text-gray-600'
+                  />
+                </Tooltip>
+              )}
             </div>
           </CardTitle>
           <CardDescription>{description}</CardDescription>
@@ -43,13 +55,33 @@ export default function CardItem(props: { project: any }) {
           </div>
         </CardContent>
         <CardFooter>
-          <div className='w-full flex justify-between'>
-            <Link href={'/'} className='pl-2'>
-              <Github />
-            </Link>
-            <Link href='/'>
-              <ChevronRight />
-            </Link>
+          <div className='w-full flex justify-between my-2'>
+            <div className='pl-2'>
+              {publicRepo ? (
+                <Tooltip label='Public Repo'>
+                  <Github className='text-black dark:text-white' />
+                </Tooltip>
+              ) : (
+                <Tooltip label='Private Repo'>
+                  <Github className='text-gray-300 dark:text-gray-600' />
+                </Tooltip>
+              )}
+            </div>
+            <div>
+              {props.more ? (
+                <Link href={props.more}>
+                  <div className='flex items-center'>
+                    <span className='text-sm'>See more </span>
+                    <ChevronRight />
+                  </div>
+                </Link>
+              ) : (
+                <div className='flex items-center text-gray-300 dark:text-gray-600'>
+                  <span className='text-sm'>See more </span>
+                  <ChevronRight />
+                </div>
+              )}
+            </div>
           </div>
         </CardFooter>
       </div>

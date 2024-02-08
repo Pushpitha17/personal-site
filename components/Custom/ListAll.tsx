@@ -13,9 +13,9 @@ function ListAll(props: { data: any[] }) {
       <div>
         <div className='grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-8'>
           {props.data.map((project, index) => (
-            <Link href={`/projects/${project.route}`} key={index}>
-              <CardItem project={project} />
-            </Link>
+            <div key={index}>
+              <CardItem project={project} more={`/projects/${project.route}`} />
+            </div>
           ))}
           {/* <CardItem />
             <CardItem />

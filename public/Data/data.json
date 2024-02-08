@@ -9,7 +9,7 @@
   "hermes": {
     "title": "Project Hermes",
     "name": "Content Hosting Platform",
-    "md": "athena.md",
+    "md": "hermes.md",
     "tags": ["React", "Material Ui", "Strapi", "Google Cloud", "firebase"],
     "imgs": ["Hermes/1.jpg", "Hermes/2.jpg", "Hermes/3.png"]
   }

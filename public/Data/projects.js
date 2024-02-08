@@ -6,7 +6,7 @@ const projects = {
       description: `Athena is a content hosting and distribution platform. It is the longest and most active project I have worked on so far. It is where I started learning what it means to build software.`,
       link: 'https://athena.frontiergroup.info/',
       tags: ['React', 'Material Ui', 'Strapi', 'Google Cloud', 'firebase'],
-      publicRepo: true,
+      publicRepo: false,
       image: '/static/Images/athena/1.jpg',
     },
     {
@@ -14,9 +14,9 @@ const projects = {
       route: 'hermes',
       description: `Hermes is an internal data managing application. Its main features include bulk email sending ,client management and internal user management. 
     `,
-      link: 'https://athena.frontiergroup.info/',
+      link: '',
       tags: ['React', 'Material Ui', 'Google Cloud', 'firebase'],
-      publicRepo: true,
+      publicRepo: false,
       image: '/static/Images/Hermes/1.jpg',
     },
   ],
@@ -31,7 +31,7 @@ const projects = {
       image: '/static/Images/athena/1.jpg',
     },
     {
-      name: 'Research Project - Modeling Rubber Vulcanisation Reaction',
+      name: 'Modeling Rubber Vulcanisation Reaction (Research Project)',
       route: 'fyp',
       description: `I built this site primarality to demonstrate my software projects. I Plan on to use this as a personal blog.`,
       link: 'https://athena.frontiergroup.info/',
@@ -59,7 +59,7 @@ const projects = {
       publicRepo: true,
       image: '/static/Images/athena/1.jpg',
     },
-  ]
+  ],
 }
 //   {
 //     'Project Athena': {
