@@ -51,7 +51,7 @@ export default function RootLayout({
                   <hr className='border-black dark:border-gray-700'></hr>
                   <div className='md:flex justify-between py-5 ml-3 dark:text-white text-gray-900'>
                     <div> © Pushpitha Geeganage, 2024</div>
-                    <div className='flex py-3 md:py-0'>
+                    {/* <div className='flex py-3 md:py-0'>
                       <a
                         href='https://github.com/Pushpitha17'
                         className='mr-3'
@@ -73,7 +73,7 @@ export default function RootLayout({
                       >
                         <Instagram />
                       </a>
-                    </div>
+                    </div> */}
                   </div>
                 </Container>
               </div>

@@ -4,7 +4,7 @@ import Link from 'next/link'
 
 export default function Home() {
   return (
-    <main className='py-10 md:pt-20'>
+    <main className='pt-16 pb-10 md:pt-20'>
       <Container>
         <div className='flex'>
           <div className='md:w-8/12'>

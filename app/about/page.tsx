@@ -22,17 +22,17 @@ export default async function Projects() {
         <p className='mb-4 text-3xl font-extrabold leading-none tracking-tight md:text-4xl'>
           About Me
         </p>
-        <div className='mb-5'>
-          <p className='text-lg text-gray-700 dark:text-gray-300 text-justify'>
+        <div className='mb-4'>
+          <p className='text-md text-gray-700 dark:text-gray-300 text-left'>
             I am a final year Materials Science and Enginering undergraduate at
             university of Moratuwa.
           </p>
-          <p className='text-lg text-gray-700 dark:text-gray-300 text-justify'>
+          <p className='text-md text-gray-700 dark:text-gray-300 text-left'>
             I study about properties, applications and manufacuring of all types
             of materials. I specifically focus on aspects of polymer materials
             and Entrepreneurship.
           </p>
-          <p className='text-lg text-gray-700 dark:text-gray-300 text-justify mt-3'>
+          <p className='text-md text-gray-700 dark:text-gray-300 text-left mt-3'>
             I am also a self taught programmer. I have experience full stack web
             development and some computational programming.
           </p>
@@ -42,12 +42,12 @@ export default async function Projects() {
             href='/static/Pushpitha Geeganage - SE.pdf'
             download='Pushpitha Geeganage Resume'
           >
-            <div className='underline-offset-4 underline decoration-solid decoration-pink pb-5 text-gray-700 dark:text-gray-300'>
+            <div className='underline-offset-8 underline decoration-solid decoration-pink decoration-3 pb-5 text-gray-700 dark:text-gray-300'>
               Download My Developer Resume
             </div>
           </a>
         </div>
-        <div className='mb-5'>
+        <div className='mt-5 my-7 mb-12 md:mb-7'>
           <div className='text-2xl font-semibold mb-3'>Connect</div>
           <div className='flex text-pink'>
             <a
@@ -58,21 +58,21 @@ export default async function Projects() {
               <Instagram size={24} strokeWidth={1.5} />
             </a>
             <a
-              href='https://www.linkedin.com/in/pushpitha-geeganage-b98280171/'
+              href='https://www.facebook.com/profile.php?id=100008712275462'
               className='mr-3'
               target='blank'
             >
               <Facebook size={24} strokeWidth={1.5} />
             </a>
             <a
-              href='https://github.com/Pushpitha17'
+              href='https://twitter.com/pushpitha_g'
               className='mr-3'
               target='blank'
             >
               <Twitter size={24} strokeWidth={1.5} />
             </a>
             <a
-              href='https://github.com/Pushpitha17'
+              href='https://www.linkedin.com/in/pushpitha-geeganage-b98280171/'
               className='mr-3'
               target='blank'
             >
@@ -80,7 +80,7 @@ export default async function Projects() {
             </a>
           </div>
         </div>
-        <div>
+        <div className='my-7 mb-12 md:mb-7'>
           <div className='text-2xl font-semibold mb-3'>More</div>
           <div className='text-gray-700 dark:text-gray-300'>
             <Accordion allowToggle>
@@ -106,7 +106,7 @@ export default async function Projects() {
                       title: 'PC',
                       item: [
                         {
-                          itemName: 'Msi Delta 15',
+                          itemName: 'Msi Delta 15 Laptop',
                           link: 'https://www.msi.com/Laptop/Delta-15-A5EX/Gallery',
                         },
                       ],
@@ -131,7 +131,7 @@ export default async function Projects() {
                     element={{
                       title: 'Audio',
                       item: [
-                        { itemName: 'Sennheiser HD450BT' },
+                        { itemName: 'Sennheiser HD450BT ANC Headaset' },
                         { itemName: 'Samsung Galaxy Buds 2' },
                       ],
                     }}
