@@ -7,7 +7,8 @@ import DrawerNavigation from '@/components/Custom/DrawerNavigation'
 import { ChakraProvider } from '@chakra-ui/react'
 import { Instagram, Github, Linkedin } from 'lucide-react'
 import Link from 'next/link'
-import { Providers } from './providers'
+import { Providers } from '../components/providers'
+import ScrollUp from '@/components/ScrollUp'
 
 const inter = Inter({ subsets: ['latin'] })
 
@@ -24,6 +25,7 @@ export default function RootLayout({
   return (
     <html lang='en'>
       <body className={inter.className}>
+        <ScrollUp/>
         <Providers>
           <ChakraProvider>
             <div className="flex flex-col min-h-screen  bg-[url('/static/Images/dot-grid.png')] dark:bg-none  dark:text-white text-gray-900">

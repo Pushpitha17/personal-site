@@ -7,3 +7,7 @@
   list-style-type: bullet;
   padding-left: 2rem;
 }
+
+.markdown a {
+  text-decoration: underline;
+}

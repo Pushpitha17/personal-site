@@ -25,7 +25,7 @@ export default async function Projects() {
         <div className='mb-4'>
           <p className='text-md text-gray-700 dark:text-gray-300 text-left'>
             I am a final year Materials Science and Enginering undergraduate at
-            university of Moratuwa.
+            University of Moratuwa.
           </p>
           <p className='text-md text-gray-700 dark:text-gray-300 text-left'>
             I study about properties, applications and manufacuring of all types
@@ -33,7 +33,7 @@ export default async function Projects() {
             and Entrepreneurship.
           </p>
           <p className='text-md text-gray-700 dark:text-gray-300 text-left mt-3'>
-            I am also a self taught programmer. I have experience full stack web
+            I am also a self taught programmer. I have experience in full stack web
             development and some computational programming.
           </p>
         </div>

@@ -5,7 +5,8 @@ import remarkGfm from 'remark-gfm'
 import ImageCarousel from '@/components/Custom/ImageCarousel'
 import PillButton from '@/components/Custom/PillButton'
 import path from 'path'
-
+import Container from '@/components/ui/Container'
+import BreadCrumbs from '@/components/Custom/breadCrumbs'
 interface Project {
   title: string
   name: string
@@ -18,13 +19,11 @@ interface ProjectData {
   [key: string]: Project
 }
 
-export default async function IndividualProjectPage({
+export default async function Page({
   params,
 }: {
   params: { project: string }
 }) {
-  const environment = process.env.NEXT_PUBLIC_ENVIRONMENT || 'development'
-
   const { project } = params
   let markDownContent = ''
   let data: ProjectData = {}
@@ -42,9 +41,6 @@ export default async function IndividualProjectPage({
   )
   markDownContent = await fs.readFile(mdFilePath, 'utf8')
 
-  // let images = data[project].imgs.map((img: string) => {
-  //   return `/data/Images/${img}`
-  // })
   let images = data[project].imgs.map((img: string) => {
     return {
       original: `/static/Images/${img}`,
@@ -53,25 +49,35 @@ export default async function IndividualProjectPage({
   })
 
   return (
-    <main className=''>
-      <h2 className='mb-4 text-3xl font-extrabold leading-none tracking-tight text-gray-900 md:text-4xl dark:text-white'>
-        {data[project].title}
-      </h2>
-      <div className='flex flex-wrap mb-8'>
-        {data[project].tags.map((pill: string) => (
-          <PillButton key={pill} text={pill} />
-        ))}
+    <Container>
+      <div>
+        <BreadCrumbs
+          path={[
+            { name: 'Projects', url: '/projects' },
+            { name: data[project].title },
+          ]}
+        ></BreadCrumbs>
       </div>
-      <div className='flex flex-col sm:flex-row-reverse'>
-        <div className='flex justify-center my-5 flex-1'>
-          <ImageCarousel images={images} />
+      <main className=''>
+        <h2 className='mb-4 text-3xl font-extrabold leading-none tracking-tight text-gray-900 md:text-4xl dark:text-white'>
+          {data[project].title}
+        </h2>
+        <div className='flex flex-wrap mb-8'>
+          {data[project].tags.map((pill: string) => (
+            <PillButton key={pill} text={pill} />
+          ))}
         </div>
-        <div className='markdown flex-1 mr-0 md:mr-5'>
-          <ReactMarkdown remarkPlugins={[remarkGfm]}>
-            {markDownContent}
-          </ReactMarkdown>
+        <div className='flex flex-col sm:flex-row-reverse'>
+          <div className='flex justify-center my-5 flex-1'>
+            <ImageCarousel images={images} />
+          </div>
+          <div className='markdown flex-1 mr-0 md:mr-5'>
+            <ReactMarkdown remarkPlugins={[remarkGfm]}>
+              {markDownContent}
+            </ReactMarkdown>
+          </div>
         </div>
-      </div>
-    </main>
+      </main>
+    </Container>
   )
 }

@@ -68,18 +68,13 @@ export default function CardItem(props: { project: any; more?: string }) {
               )}
             </div>
             <div>
-              {props.more ? (
-                <Link href={props.more}>
+              {props.more && (
+                <Link href={props.more} scroll={true}>
                   <div className='flex items-center'>
                     <span className='text-sm'>See more </span>
                     <ChevronRight />
                   </div>
                 </Link>
-              ) : (
-                <div className='flex items-center text-gray-300 dark:text-gray-600'>
-                  <span className='text-sm'>See more </span>
-                  <ChevronRight />
-                </div>
               )}
             </div>
           </div>
