@@ -10,7 +10,42 @@
     "title": "Project Hermes",
     "name": "Content Hosting Platform",
     "md": "hermes.md",
-    "tags": ["React", "Material Ui", "Strapi", "Google Cloud", "firebase"],
+    "tags": ["React", "Material Ui", "Google Cloud", "firebase"],
     "imgs": ["Hermes/1.jpg", "Hermes/2.jpg", "Hermes/3.png"]
+  },
+  "portfolio": {
+    "title": "This Portfolio",
+    "name": "Portfolio Site",
+    "md": "Portfolio.md",
+    "tags": ["NextJs", "Tailwind", "Markdown"],
+    "imgs": ["Portfolio/1.png", "Portfolio/2.png"]
+  },
+  "ramen": {
+    "title": "Processing Spectroscopy Data",
+    "name": "Spectral Analysis Software",
+    "md": "Spectral Analysis Software.md",
+    "tags": ["React", "Ant Design", "Python", "Flask", "Google Cloud"],
+    "imgs": ["ramen app/1.png", "ramen app/2.png"]
+  },
+  "uitocode": {
+    "title": "UI to Code",
+    "name": "Ui to code",
+    "md": "UI to Code.md",
+    "tags": ["React", "Material Ui", "Strapi", "Google Cloud", "firebase"],
+    "imgs": ["and dare/1.png", "and dare/2.png", "and dare/3.png"]
+  },
+  "order-management": {
+    "title": "Purchase Order Management System",
+    "name": "Purchase Order Management System",
+    "md": "Purchase Order Management app.md",
+    "tags": ["React", "Redux", "ExpressJS", "MongoDB"],
+    "imgs": ["Purchase order/1.png", "Purchase order/2.png", "Purchase order/3.png"]
+  },
+  "d3": {
+    "title": "Data Visualization",
+    "name": "Data Visualization",
+    "md": "Data visualization.md",
+    "tags": ["React", "Material Ui", "Strapi", "Google Cloud", "firebase"],
+    "imgs": ["D3/1.jpg", "D3/2.jpg", "D3/3.jpg"]
   }
 }

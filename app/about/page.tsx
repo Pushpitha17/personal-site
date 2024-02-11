@@ -39,7 +39,7 @@ export default async function Projects() {
         </div>
         <div>
           <a
-            href='/static/Pushpitha Geeganage - SE.pdf'
+            href='/static/Pushpitha Geeganage-SE.pdf'
             download='Pushpitha Geeganage Resume'
           >
             <div className='underline-offset-8 underline decoration-solid decoration-pink decoration-3 pb-5 text-gray-700 dark:text-gray-300'>
@@ -87,7 +87,60 @@ export default async function Projects() {
               <AccordionItem border='none'>
                 <h2>
                   <AccordionButton padding={0}>
-                    <span className='text-lg font-semibold'>My Devices</span>
+                    <span className='text-lg font-semibold'>Technologies</span>
+                    <AccordionIcon className='ml-5' />
+                  </AccordionButton>
+                </h2>
+                <div className='py-2'>
+                  <hr></hr>
+                </div>
+                <AccordionPanel pb={4}>
+                  <AccordianlItem
+                    element={{
+                      title: 'Languages',
+                      item: [{ itemName: 'JavaScript, Typescript, Python' }],
+                    }}
+                  />
+                  <AccordianlItem
+                    element={{
+                      title: 'Frontend',
+                      item: [
+                        {
+                          itemName: 'React , NextJs, Redux, Tailwind Css, Material UI',
+                        },
+                      ],
+                    }}
+                  />
+                  <AccordianlItem
+                    element={{
+                      title: 'Backend',
+                      item: [{ itemName: 'NodeJs, ExpressJS, Flask, Sql and Nosql Databases , ORMs' }],
+                    }}
+                  />
+                  <AccordianlItem
+                    element={{
+                      title: 'Services',
+                      item: [
+                        { itemName: ' Google Cloud , Firebase , Edge functions' },
+                      ],
+                    }}
+                  />
+                  <AccordianlItem
+                    element={{
+                      title: 'Tools',
+                      item: [
+                        { itemName: 'Git, Jupyter Notebooks, Docker, Figma , Postman' },
+                      ],
+                    }}
+                  />
+                </AccordionPanel>
+              </AccordionItem>
+            </Accordion>
+            <Accordion allowToggle>
+              <AccordionItem border='none'>
+                <h2>
+                  <AccordionButton padding={0}>
+                    <span className='text-lg font-semibold'>Devices</span>
                     <AccordionIcon className='ml-5' />
                   </AccordionButton>
                 </h2>
@@ -116,6 +169,14 @@ export default async function Projects() {
                     element={{
                       title: 'Notes',
                       item: [{ itemName: 'Samsung Tab S9 FE' }],
+                    }}
+                  />
+                  <AccordianlItem
+                    element={{
+                      title: 'Screen',
+                      item: [
+                        { itemName: 'DELL S2421HN 24″ IPS' },
+                      ],
                     }}
                   />
                   <AccordianlItem

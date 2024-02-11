@@ -4,9 +4,6 @@ import { colorMappings, textColor } from '../../public/Data/colormappings'
 
 function PillButton(props: { text: string }) {
   const { text } = props
-
-  console.log({ text })
-
   return (
     <button
       className={`mr-1.5 my-1.5 py-0.5 rounded-full text-sm hover:drop-shadow-md duration-300 relative overflow-hidden group`}

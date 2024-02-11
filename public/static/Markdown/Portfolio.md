@@ -1,3 +1,5 @@
+Github : *https://github.com/Pushpitha17/personal-site*
+
 This Portfolio was built mainly to showcase the software projects i've done over the years. 
 
 I built this using Next.Js 13 using server rendered components. This text you see is rendered using markdown files. I've mapped markdown and images using JSON files to render data. 

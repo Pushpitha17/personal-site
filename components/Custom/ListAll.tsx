@@ -6,8 +6,6 @@ import Link from 'next/link'
 function ListAll(props: { data: any[] }) {
   const stack = ['React', 'Material Ui', 'Strapi', 'Google Cloud', 'firebase']
 
-  console.log({ 'professional proetcs': props.data })
-
   return (
     <div>
       <div>

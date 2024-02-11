@@ -7,10 +7,7 @@ export default async function Projects() {
 
   const professionalProjects = projects.professional
   const personalProjects = projects.personal
-  // const freeeLanceProjects = projects[1]
-  // const personalProjects = projects[2]
-
-  console.log({professionalProjects})
+  const freeeLanceProjects = projects.freelance
 
   return (
     <main className='py-4'>
@@ -39,16 +36,15 @@ export default async function Projects() {
           </p>
           <div className=' mb-8 text-lg text-gray-700 dark:text-gray-300'>
             <p className=''>
-              I contributed to these projects as a part-time Junior Software
+              I contributed to these projects in my 2 years time as a part-time Junior Software
               Developer at{' '}
               <a
                 href='https://www.frontiergroup.info/'
                 className='underline'
                 target='blank'
               >
-                Frontier Research
+                Frontier Research.
               </a>
-              {'   '}for over 2 years.
             </p>
           </div>
           <ListAll data={professionalProjects} />
@@ -63,7 +59,7 @@ export default async function Projects() {
           <p className='mb-4 text-xl font-extrabold leading-none tracking-tight md:text-2xl'>
             Freelance Projects
           </p>
-          {/* <ListAll /> */}
+          <ListAll data={freeeLanceProjects} />
         </div>
       </Container>
 
