@@ -106,7 +106,7 @@ export default async function Projects() {
                       title: 'Frontend',
                       item: [
                         {
-                          itemName: 'React , NextJs, Redux, Tailwind Css, Material UI',
+                          itemName: 'React , NextJs, Redux, Tailwind , CSS, Material UI',
                         },
                       ],
                     }}
