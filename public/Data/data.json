@@ -39,7 +39,7 @@
     "name": "Purchase Order Management System",
     "md": "Purchase Order Management app.md",
     "tags": ["React", "Redux", "ExpressJS", "MongoDB"],
-    "imgs": ["Purchase order/1.png", "Purchase order/2.png", "Purchase order/3.png"]
+    "imgs": ["Purchase order/1.png", "Purchase order/2.png", "Purchase order/3.png","Purchase order/4.png"]
   },
   "d3": {
     "title": "Data Visualization",

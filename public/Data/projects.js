@@ -37,7 +37,7 @@ const projects = {
       link: 'https://project-ramen-b1bf5.web.app/',
       tags: ['React', 'Ant Design', 'Python', 'Flask', 'Google Cloud'],
       publicRepo: true,
-      image: '/static/Images/ramen app/1.png',
+      image: '/static/Images/ramen app/2.png',
     },
     {
       name: 'UI to Code',
