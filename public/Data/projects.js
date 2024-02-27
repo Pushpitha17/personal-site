@@ -1,19 +1,18 @@
 const projects = {
   professional: [
     {
-      name: 'Project Athena',
+      name: 'Content Hosting Platform',
       route: 'athena',
-      description: `Athena is a content hosting and distribution platform. It is the longest and most active project I have worked on so far. It is where I started learning what it means to build software.`,
+      description: `This is the longest and most active project I have worked on so far. It is where I started learning what it means to build software.`,
       link: 'https://athena.frontiergroup.info/',
       tags: ['React', 'Material Ui', 'Strapi', 'Google Cloud', 'firebase'],
       publicRepo: false,
       image: '/static/Images/athena/1.jpg',
     },
     {
-      name: 'Project Hermes',
+      name: 'Internal Data Management Application',
       route: 'hermes',
-      description: `Hermes is an internal data managing application. Its main features include bulk email sending ,client management and internal user management. 
-    `,
+      description: `The application handles client data & subscriptions and has features for bulk email sending.`,
       link: '',
       tags: ['React', 'Material Ui', 'Google Cloud', 'firebase', 'NodeJS'],
       publicRepo: false,
@@ -24,7 +23,7 @@ const projects = {
     {
       name: 'This Portfolio Site',
       route: 'portfolio',
-      description: `I built this site primarality to demonstrate my software projects. I'll use this to share things that i am passionate about.`,
+      description: `I built this site primarily to demonstrate my software projects. I'll use this to share things that i am passionate about.`,
       link: 'https://athena.frontiergroup.info/',
       tags: ['NextJs', 'Tailwind', 'Markdown'],
       publicRepo: true,
