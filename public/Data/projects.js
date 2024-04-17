@@ -41,7 +41,7 @@ const projects = {
     {
       name: 'UI to Code',
       route: 'uitocode',
-      description: `I built this site primality to demonstrate my software projects. I Plan on to use this as a personal blog.`,
+      description: `A Responsive figma design was developed in to a website using Html , CSS with bootstrap and Vanilla Js`,
       link: 'https://and-dare-ui.netlify.app/',
       tags: ['HTML', 'CSS', 'Figma', 'Boostrap'],
       publicRepo: true,
